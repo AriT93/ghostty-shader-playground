@@ -64,8 +64,10 @@ vec4 saturate(vec4 color, float factor) {
     return mix(vec4(gray), color, factor);
 }
 
-const float OPACITY = 0.6;
-const float DURATION = 0.3; //IN SECONDS
+// Zenburn dark purple (original: vec4(1., 1., 0., 1.0))
+const vec4 TRAIL_COLOR = vec4(0.5, 0.4, 0.6, 1.0);
+const float OPACITY = 0.9;
+const float DURATION = 0.1; //IN SECONDS
 
 void mainImage(out vec4 fragColor, in vec2 fragCoord)
 {
@@ -102,7 +104,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord)
 
     vec4 newColor = vec4(fragColor);
 
-    vec4 trail = iCurrentCursorColor;
+    vec4 trail = TRAIL_COLOR; // was iCurrentCursorColor
     trail = saturate(trail, 2.5);
     // Draw trail
     newColor = mix(newColor, trail, antialising(sdfTrail));

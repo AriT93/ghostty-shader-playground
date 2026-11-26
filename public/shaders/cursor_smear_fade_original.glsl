@@ -60,7 +60,8 @@ float ease(float x) {
     return pow(1.0 - x, 3.0);
 }
 
-const vec4 TRAIL_COLOR = vec4(1., 1., 0., 1.0);
+// const vec4 TRAIL_COLOR = vec4(1., 1., 0., 1.0);
+const vec4 TRAIL_COLOR = vec4(0.5, 0.4, 0.6, 1.0);        // Zenburn dark purple
 const float DURATION = 0.5; //IN SECONDS
 
 void mainImage(out vec4 fragColor, in vec2 fragCoord)
