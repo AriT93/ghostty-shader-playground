@@ -66,6 +66,8 @@ vec4 saturate(vec4 color, float factor) {
 
 // Zenburn dark purple (original: vec4(1., 1., 0., 1.0))
 const vec4 TRAIL_COLOR = vec4(0.5, 0.4, 0.6, 1.0);
+// Solarized wombat (approximate) - swap with the zenburn const above to use
+// const vec4 TRAIL_COLOR = vec4(0.541, 0.776, 0.949, 1.0); // wombat blue #8ac6f2
 const float OPACITY = 0.9;
 const float DURATION = 0.1; //IN SECONDS
 

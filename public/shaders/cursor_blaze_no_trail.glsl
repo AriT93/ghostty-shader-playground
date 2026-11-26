@@ -24,6 +24,9 @@ float ease(float x) {
 // Zenburn dark purple
 const vec4 TRAIL_COLOR = vec4(0.5, 0.4, 0.6, 1.0);
 const vec4 TRAIL_COLOR_ACCENT = vec4(0.6, 0.5, 0.7, 1.0);
+// Solarized wombat (approximate) - swap with the zenburn consts above to use
+// const vec4 TRAIL_COLOR = vec4(0.541, 0.776, 0.949, 1.0);        // wombat blue #8ac6f2
+// const vec4 TRAIL_COLOR_ACCENT = vec4(0.898, 0.471, 0.427, 1.0); // wombat red #e5786d
 const float DURATION = 0.3; //IN SECONDS
 
 void mainImage(out vec4 fragColor, in vec2 fragCoord)
